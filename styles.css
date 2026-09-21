@@ -873,3 +873,98 @@ button:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Promo / Akcije */
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.promo-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 1.4rem 1.35rem 1.25rem;
+  background: var(--white, #fff);
+  border: 1px solid rgba(168, 152, 136, 0.22);
+  border-radius: var(--radius, 16px);
+  box-shadow: var(--shadow-sm, 0 4px 16px rgba(61,52,44,.06));
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s var(--ease, ease), box-shadow 0.2s var(--ease, ease);
+}
+.promo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow, 0 12px 40px rgba(61,52,44,.08));
+  color: inherit;
+}
+.promo-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  background: var(--espresso, #3d342c);
+  color: var(--ivory, #fffcf8);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.promo-badge-soft {
+  background: var(--blush, #d4b5a5);
+  color: var(--espresso, #3d342c);
+}
+.promo-loc {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--taupe, #a89888);
+}
+.promo-card h3 {
+  margin: 0;
+  padding-right: 3.5rem;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.35rem;
+  font-weight: 550;
+  line-height: 1.25;
+}
+.promo-card > p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--espresso-soft, #5c5046);
+}
+.promo-price {
+  margin-top: 0.35rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.promo-now {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--espresso, #3d342c);
+}
+.promo-was {
+  font-size: 0.9rem;
+  color: var(--taupe, #a89888);
+  text-decoration: line-through;
+}
+.promo-cta {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--gold, #b8976a);
+}
+.promo-note {
+  margin: 1.75rem 0 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--taupe, #a89888);
+}
