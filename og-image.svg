@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#f7f3ee"/>
+  <circle cx="980" cy="120" r="220" fill="#e8d5ca" opacity="0.55"/>
+  <circle cx="160" cy="520" r="180" fill="#d4bc96" opacity="0.25"/>
+  <circle cx="600" cy="315" r="72" fill="#e8d5ca"/>
+  <text x="600" y="335" text-anchor="middle" font-family="Georgia, serif" font-size="64" font-weight="600" fill="#3d342c">G</text>
+  <text x="600" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="56" fill="#3d342c">Salon Gospođica</text>
+  <text x="600" y="480" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" letter-spacing="4" fill="#7a6b5c">SALON LEPOTE · BEOGRAD</text>
+  <text x="600" y="530" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#a89888">Žarkovo &amp; Vračar</text>
+</svg>
