@@ -449,6 +449,28 @@ button:focus-visible {
   color: var(--espresso-soft);
 }
 
+.service-treatments {
+  list-style: none;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.service-treatments li {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--espresso-soft);
+  padding-left: 0.85rem;
+  border-left: 2px solid var(--blush-soft);
+}
+
+.service-treatments strong {
+  color: var(--espresso);
+  font-weight: 500;
+}
+
 .services-note {
   margin: 2rem 0 0;
   font-size: 0.9rem;
