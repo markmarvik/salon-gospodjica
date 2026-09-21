@@ -1032,46 +1032,129 @@ img.logo-mark { display: block; }
 }
 .service-icon { display: none; }
 
-
+/* Akcije cards — same media size as Usluge, phone-first */
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
 .promo-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 0;
   overflow: hidden;
+  gap: 0;
+  background: var(--white, #fff);
+  border: 1px solid rgba(168, 152, 136, 0.2);
+  border-radius: var(--radius, 16px);
+  box-shadow: var(--shadow-sm, 0 4px 16px rgba(61,52,44,.06));
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.promo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow, 0 12px 40px rgba(61,52,44,.08));
+  color: inherit;
 }
 .promo-media {
   aspect-ratio: 12 / 5;
+  width: 100%;
   overflow: hidden;
   background: var(--cream-dark, #efe8df);
-  margin: 0 0 0.85rem;
+  margin: 0;
+  flex: 0 0 auto;
 }
 .promo-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
-  transition: transform 0.45s ease;
 }
-.promo-card:hover .promo-media img {
-  transform: scale(1.04);
+.promo-badge {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  z-index: 2;
+  padding: 0.28rem 0.65rem;
+  border-radius: 999px;
+  background: var(--espresso, #3d342c);
+  color: var(--ivory, #fffcf8);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
-.promo-card > .promo-badge {
-  /* keep absolute but account for media */
+.promo-badge-soft {
+  background: var(--blush, #d4b5a5);
+  color: var(--espresso, #3d342c);
 }
-.promo-card .promo-loc,
-.promo-card h3,
-.promo-card > p,
-.promo-card .promo-price,
-.promo-card .promo-cta {
-  padding-left: 1.35rem;
-  padding-right: 1.35rem;
+.promo-loc {
+  margin: 0.9rem 1.15rem 0;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--taupe, #a89888);
 }
-.promo-card .promo-cta {
-  padding-bottom: 1.25rem;
+.promo-card h3 {
+  margin: 0.35rem 1.15rem 0;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.25rem;
+  font-weight: 550;
+  line-height: 1.25;
+  padding-right: 0.5rem;
+}
+.promo-card > p {
+  margin: 0.4rem 1.15rem 0;
+  font-size: 0.9rem;
+  color: var(--espresso-soft, #5c5046);
+}
+.promo-price {
+  margin: 0.45rem 1.15rem 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
+}
+.promo-now {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.promo-was {
+  font-size: 0.85rem;
+  color: var(--taupe, #a89888);
+  text-decoration: line-through;
+}
+.promo-cta {
+  margin: 0.7rem 1.15rem 1.15rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--gold, #b8976a);
 }
 .promo-card-featured {
-  border-color: rgba(184, 151, 106, 0.55);
-  box-shadow: 0 10px 36px rgba(61, 52, 44, 0.1);
+  border-color: rgba(184, 151, 106, 0.45);
 }
-.promo-card .promo-badge {
-  top: 1.1rem;
-  right: 1.1rem;
+.promo-note {
+  margin: 1.5rem 0 0;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--taupe, #a89888);
 }
+@media (max-width: 520px) {
+  .promo-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .promo-media,
+  .service-media {
+    aspect-ratio: 12 / 5;
+  }
+  .promo-card h3 {
+    font-size: 1.15rem;
+  }
+}
+
