@@ -1,0 +1,20 @@
+Salon Gospođica service-card assets (downloaded/cropped 2026-09-21)
+
+SrediMe source gallery — Salon Gospođica Žarkovo:
+https://www.sredime.rs/beograd/salon-gospodjica
+CDN base: https://static.sredime.rs/image/vendor/8/4/84ddfb34126fc3a48ee38d7044e87276/gospodjica_N_md.jpg
+Used: face-1 from N=1; nails-1 from N=4; laser-1 from N=6; body-1 from N=7; brand-salon-interior from N=0.
+
+SrediMe source gallery — Tijana Mrđen PMU & Esthetics Vračar:
+https://www.sredime.rs/beograd/salon-tijana-mrdjen-pmu-esthetics
+CDN base: https://static.sredime.rs/image/vendor/2/5/250413d2982f1f83aa62a3a323cd2a87/tijana-mrdjen-pmu-esthetics_N_md.jpg
+Used: pmu-1 from N=0.
+
+Facebook page (public visible page):
+https://www.facebook.com/salonlepotegospodjica
+facebook-cover.jpg and facebook-logo.jpg are crops from the publicly visible cover/profile assets because Facebook CDN URLs returned URL-signature mismatch when fetched outside the page.
+
+Instagram checked:
+https://www.instagram.com/salongospodjica/
+https://www.instagram.com/tijana.mrdjen.pmu/
+Profiles and highlights were publicly viewable; CDN image URLs returned URL-signature mismatch on direct download, so no Instagram feed files were saved. Instagram branding candidates are noted in the report.
